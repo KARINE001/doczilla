@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 31 31 31;
+  --foreground: 255 255 255;
+  --accent: 249 115 22;
+}
+
+body {
+  @apply bg-[#1f1f1f] text-white;
+}
+
+.card-hover {
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl;
+}
+
+.prose {
+  @apply text-gray-300;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-white font-bold;
+}
+
+.prose h1 {
+  @apply text-2xl mb-4;
+}
+
+.prose h2 {
+  @apply text-xl mb-3;
+}
+
+.prose h3 {
+  @apply text-lg mb-2;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose ul, .prose ol {
+  @apply mb-4 pl-6;
+}
+
+.prose li {
+  @apply mb-1;
+}
+
+.prose code {
+  @apply bg-[#1f1f1f] px-1.5 py-0.5 rounded text-orange-400;
+}
+
+.prose pre {
+  @apply bg-[#1f1f1f] p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-gray-300;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-orange-500 pl-4 italic my-4;
+}
+
+.prose a {
+  @apply text-orange-400 hover:text-orange-300;
+}
+
+.prose table {
+  @apply w-full mb-4;
+}
+
+.prose th, .prose td {
+  @apply border border-gray-700 p-2;
+}
+
+.prose th {
+  @apply bg-[#2a2a2a];
+}
